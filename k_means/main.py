@@ -18,3 +18,6 @@ for i in range(1, 11):
     kmeans = model(n_clusters=i,random_state=42)
     kmeans.fit(X)
     wcss.append(kmeans.inertia_)
+
+plt.plot(range(1, 11),wcss)
+plt.show()
