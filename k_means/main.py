@@ -35,7 +35,8 @@ plt.scatter(X[y_pred == 1,0], X[y_pred == 1,1],s=100, c="blue" , label="C2")
 plt.scatter(X[y_pred == 2,0], X[y_pred == 2,1],s=100, c="green" , label="C3")
 plt.scatter(X[y_pred == 3,0], X[y_pred == 3,1],s=100, c="yellow" , label="C4")
 plt.scatter(X[y_pred == 4, 0], X[y_pred == 4, 1], s=100, c="purple", label="C5")
-plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1],s=300,c="black",label="Centroids")
+plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s=300, c="black", label="Centroids")
+plt.legend()
 plt.show()
 
 
