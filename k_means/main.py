@@ -19,5 +19,15 @@ for i in range(1, 11):
     kmeans.fit(X)
     wcss.append(kmeans.inertia_)
 
-plt.plot(range(1, 11),wcss)
+plt.plot(range(1, 11), wcss)
+plt.title("The Elbow Method")
 plt.show()
+
+# using the optimal number of clusters
+kmeans = model(n_clusters=5, random_state=42)
+kmeans.fit(X)
+
+# Visualizing the prediction
+
+
+
